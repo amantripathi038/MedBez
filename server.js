@@ -17,6 +17,7 @@ mongoose
     .catch((err) => console.log(err));
 
 const PORT = process.env.PORT || 3000;
+const IP = "192.168.0.101"
 const server = app.listen(PORT, () => {
-    console.log(`App running on port http://localhost:${PORT}...`);
+    console.log(`App running on port http://${IP}:${PORT}...`);
 });

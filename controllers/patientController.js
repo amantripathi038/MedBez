@@ -103,7 +103,7 @@ module.exports.createRecord = catchAsync(async function (req, res, next) {
         patientAadhar: req.user.aadhar,
         description: req.body.description,
         date: req.body.date,
-        file: file.substring(7)
+        file: file
     }
     const transactionHash = await createRecordMethod(obj);
     res.status(201).json({
